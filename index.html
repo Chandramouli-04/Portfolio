@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maddula Chandramouli | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Maddula Chandramouli, a full stack developer working with Java, Spring Boot, React.js and MySQL.">
+
+  <!-- Applies the saved theme before the page paints, so there is no flash -->
+  <script>
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved) document.documentElement.setAttribute("data-theme", saved);
+    } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Chandramouli</a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/>
+          </svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Maddula Chandramouli</h1>
+          <p class="hero-role">Full stack developer</p>
+          <p class="hero-lead">
+            I build secure web apps with Java, Spring Boot, React.js and MySQL.
+            I have also trained a machine learning model on more than 1.7 million crime records.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">See my projects</a>
+            <a class="btn" href="Chandramouli_Resume_final.pdf" download>Download resume</a>
+          </div>
+        </div>
+
+        <!-- A small "API response" that introduces me: a nod to the REST APIs I build -->
+        <div class="api-panel">
+          <div class="api-bar">
+            <span class="method">GET</span>
+            <span class="path">/api/developers/chandramouli</span>
+            <span class="status">200 OK</span>
+          </div>
+          <div class="api-body" id="api-body">
+            <span class="line p">{</span>
+            <span class="line" style="--i:1"><span class="k">"name"</span><span class="p">:</span> <span class="s">"Maddula Chandramouli"</span><span class="p">,</span></span>
+            <span class="line" style="--i:1"><span class="k">"role"</span><span class="p">:</span> <span class="s">"Full Stack Developer"</span><span class="p">,</span></span>
+            <span class="line" style="--i:1"><span class="k">"location"</span><span class="p">:</span> <span class="s">"Vuyyuru, Andhra Pradesh"</span><span class="p">,</span></span>
+            <span class="line" style="--i:1"><span class="k">"stack"</span><span class="p">: [</span></span>
+            <span class="line" style="--i:2"><span class="s">"Java"</span><span class="p">,</span> <span class="s">"Spring Boot"</span><span class="p">,</span> <span class="s">"React.js"</span><span class="p">,</span></span>
+            <span class="line" style="--i:2"><span class="s">"MySQL"</span><span class="p">,</span> <span class="s">"Python"</span></span>
+            <span class="line p" style="--i:1">],</span>
+            <span class="line" style="--i:1"><span class="k">"degree"</span><span class="p">:</span> <span class="s">"B.Tech in CSE, 2025"</span><span class="p">,</span></span>
+            <span class="line" style="--i:1"><span class="k">"certified"</span><span class="p">:</span> <span class="s">"Azure Fundamentals"</span><span class="p">,</span></span>
+            <span class="line" style="--i:1"><span class="k">"openToWork"</span><span class="p">:</span> <span class="b">true</span></span>
+            <span class="line p">}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap section-grid">
+        <div class="section-head">
+          <h2 id="projects-title">Projects</h2>
+        </div>
+
+        <div class="section-body">
+
+          <article class="project">
+            <h3>Crime Hotspot Forecasting System</h3>
+            <p class="project-sum">
+              A machine learning platform that predicts where crime is likely to happen,
+              so police can make decisions using data.
+            </p>
+
+            <ul class="tags" aria-label="Technologies used">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Random Forest</li>
+              <li>Scikit-learn</li>
+            </ul>
+
+            <dl class="stats">
+              <div><dt>Prediction accuracy</dt><dd>83.7%</dd></div>
+              <div><dt>Crime records used</dt><dd>1.7M+</dd></div>
+              <div><dt>Concurrent users</dt><dd>750+</dd></div>
+              <div><dt>System uptime</dt><dd>99.95%</dd></div>
+              <div><dt>Better patrol routes</dt><dd>23%</dd></div>
+            </dl>
+
+            <ul class="bullets">
+              <li>Built the full machine learning pipeline with Random Forest, from raw crime records to predictions.</li>
+              <li>Served predictions through RESTful Flask APIs.</li>
+              <li>Cleaned the data and engineered features, which reduced false positives and made the model more robust.</li>
+              <li>Connected real-time spatial hotspots so patrol routes can be planned around them.</li>
+            </ul>
+
+            <!-- EDIT: replace with your real repository link -->
+            
+          </article>
+
+          <article class="project">
+            <h3>Book Management System</h3>
+            <p class="project-sum">
+              A full-stack web app for managing a library or book inventory,
+              with secure login and different permissions for admins and users.
+            </p>
+
+            <ul class="tags" aria-label="Technologies used">
+              <li>React.js</li>
+              <li>Spring Boot</li>
+              <li>MySQL</li>
+              <li>JWT</li>
+              <li>JPA / Hibernate</li>
+              <li>Postman</li>
+            </ul>
+
+            <ul class="bullets">
+              <li>Built RESTful APIs with Spring Boot covering create, read, update and delete for the book inventory.</li>
+              <li>Added JWT authentication and role-based authorization (Admin and User) for secure sessions.</li>
+              <li>Built a responsive React.js interface with dynamic routing and state management.</li>
+              <li>Stored data in MySQL through JPA/Hibernate, and tested the APIs end to end with Postman.</li>
+            </ul>
+
+            <!-- EDIT: replace with your real repository link -->
+            <a class="text-link" href="https://github.com/your-username/book-management-system" target="_blank" rel="noopener">View code on GitHub</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap section-grid">
+        <div class="section-head">
+          <h2 id="skills-title">Skills</h2>
+        </div>
+
+        <div class="section-body">
+          <dl class="skill-list">
+            <div class="skill-row">
+              <dt>Languages</dt>
+              <dd>
+                <ul class="tags">
+                  <li>Java</li><li>Python</li><li>C</li>
+                </ul>
+              </dd>
+            </div>
+            <div class="skill-row">
+              <dt>Frontend</dt>
+              <dd>
+                <ul class="tags">
+                  <li>React.js</li><li>JavaScript (ES6+)</li><li>HTML5</li><li>CSS3</li><li>Responsive UI design</li>
+                </ul>
+              </dd>
+            </div>
+            <div class="skill-row">
+              <dt>Backend</dt>
+              <dd>
+                <ul class="tags">
+                  <li>Spring Boot</li><li>Flask</li><li>RESTful APIs</li><li>JPA / Hibernate</li><li>JWT authentication</li><li>MVC architecture</li>
+                </ul>
+              </dd>
+            </div>
+            <div class="skill-row">
+              <dt>Database</dt>
+              <dd>
+                <ul class="tags">
+                  <li>MySQL</li><li>SQL query optimization</li>
+                </ul>
+              </dd>
+            </div>
+            <div class="skill-row">
+              <dt>Cloud and tools</dt>
+              <dd>
+                <ul class="tags">
+                  <li>Git</li><li>GitHub</li><li>VS Code</li><li>Eclipse</li><li>Postman</li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap section-grid">
+        <div class="section-head">
+          <h2 id="experience-title">Experience</h2>
+        </div>
+
+        <div class="section-body">
+          <article class="entry">
+            <h3>AWS Academy Cloud Virtual Internship</h3>
+            <p class="entry-meta">NEAT (AICTE) and EduSkills &middot; April 2024 to June 2024</p>
+            <ul class="bullets">
+              <li>Completed a 10-week cloud virtual internship under the AICTE NEAT initiative, delivered by EduSkills with curriculum from AWS Academy.</li>
+              <li>Learned cloud computing concepts, core AWS services and cloud architecture best practices.</li>
+              <li>Finished the program with Grade B.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION + CERTIFICATIONS ============ -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="wrap section-grid">
+        <div class="section-head">
+          <h2 id="education-title">Education</h2>
+        </div>
+
+        <div class="section-body">
+          <article class="entry">
+            <h3>B.Tech in Computer Science &amp; Engineering</h3>
+            <p class="entry-meta">Seshadri Rao Gudlavalleru Engineering College, Andhra Pradesh &middot; 2021 to 2025</p>
+            <p>CGPA: 7.84 / 10.0</p>
+          </article>
+
+          <h3 class="subhead">Certifications</h3>
+          <ul class="cert-list">
+            <li><span class="cert-name">Microsoft Certified: Azure Fundamentals (AZ-900)</span><span class="cert-issuer">Microsoft</span></li>
+            <li><span class="cert-name">Privacy and Security in Online Social Media</span><span class="cert-issuer">NPTEL, IIT</span></li>
+            <li><span class="cert-name">Data Science and Machine Learning Capstone</span><span class="cert-issuer">IBM</span></li>
+            <li><span class="cert-name">.NET Full Stack Development</span><span class="cert-issuer">Wipro TalentNext</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap section-grid">
+        <div class="section-head">
+          <h2 id="contact-title">Contact</h2>
+        </div>
+
+        <div class="section-body">
+          <p class="contact-lead">I'm looking for a full stack developer role. Email is the quickest way to reach me.</p>
+
+          <a class="contact-mail" href="mailto:maddulachandramouli19@gmail.com">maddulachandramouli19@gmail.com</a>
+
+          <div class="contact-actions">
+            <button class="btn btn-primary" id="copy-email" type="button" data-email="maddulachandramouli19@gmail.com" aria-live="polite">Copy email</button>
+            <a class="btn" href="Chandramouli_Resume_final.pdf" download>Download resume</a>
+          </div>
+
+          <dl class="contact-list">
+            <div><dt>Phone</dt><dd><a href="tel:+917382945882">+91 73829 45882</a></dd></div>
+            <div><dt>Location</dt><dd>Hyderabad Telangana, India</dd></div>
+            <!-- EDIT: replace with your real LinkedIn and GitHub profile links -->
+            <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/maddula-chandramouli-38a35326a" target="_blank" rel="noopener">linkedin.com/in/chandramouli</a></dd></div>
+            <div><dt>GitHub</dt><dd><a href="https://github.com/Chandramouli-04" target="_blank" rel="noopener">github.com/Chandramouli-04</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Maddula Chandramouli</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
